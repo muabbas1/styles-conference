@@ -60,43 +60,31 @@ table {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-.container {
-  /*
-  ========================================
-  Typography
-  ========================================
-*/
-
-h1, h3, h4, h5, p {
-  margin-bottom: 22px;
-}
-
+.container,
+.grid {
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
   width: 960px;
 }
-
-/*
-  ========================================
-  Grid
-  ========================================
-*/
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .container {
-  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-  width: 960px;
+}
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3,
+.col-2-3  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
 }
 
 /*
@@ -104,6 +92,7 @@ h1, h3, h4, h5, p {
   Clearfix
   ========================================
 */
+
 .group:before,
 .group:after {
   content: "";
@@ -119,23 +108,6 @@ h1, h3, h4, h5, p {
 
 /*
   ========================================
-  Buttons
-  ========================================
-*/
-
-.btn {
-  border-radius: 5px;
-  display: inline-block;
-  margin: 0;
-}
-
-.btn-alt {
-  border: 1px solid #dfe2e5;
-  padding: 10px 30px;
-}
-
-/*
-  ========================================
   Typography
   ========================================
 */
@@ -155,15 +127,9 @@ h1, h3, h4, h5, p {
   display: inline-block;
   margin: 0;
 }
-
-/*
-  ========================================
-  Home
-  ========================================
-*/
-
-.hero {
-  padding: 22px 80px 66px 80px;
+.btn-alt {
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px;
 }
 
 /*
@@ -173,13 +139,9 @@ h1, h3, h4, h5, p {
 */
 
 .logo {
-  float: left;
-}
-
-.logo {
   border-top: 4px solid #648880;
-  padding: 40px 0 22px 0;
   float: left;
+  padding: 40px 0 22px 0;
 }
 
 /*
@@ -188,88 +150,21 @@ h1, h3, h4, h5, p {
   ========================================
 */
 
+.primary-footer {
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
 .primary-footer small {
   float: left;
 }
 
-section {
-  float: left;
-}
-aside {
-  float: right;
-}
+/*
+  ========================================
+  Home
+  ========================================
+*/
 
-section {
-  float: left;
-  margin: 0 1.5%;
-  width: 63%;
-}
-aside {
-  float: right;
-  margin: 0 1.5%;
-  width: 30%;
-}
-
-section {
-  float: left;
-  margin: 0 1.5%;
-  width: 30%;
-}
-
-div {
-  clear: left;
-}
-
-footer {
-  clear: both;
-}
-
-.col-1-3 {
-  width: 33.33%;
-}
-.col-2-3 {
-  width: 66.66%;
-}
-
-.col-1-3,
-.col-2-3 {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.grid,
-.col-1-3,
-.col-2-3 {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container,
-.grid {
-  margin: 0 auto;
-  width: 960px;
-}
-.container {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-div {
-  height: 100px;
-  width: 100px;
-}
-.offset {
-  left: 20px;
-  position: relative;
-  top: 20px;
-}
-
-section {
-  position: relative;
-}
-div {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+.hero {
+  padding: 22px 80px 66px 80px;
 }
 
